@@ -7,6 +7,8 @@ import java.util.function.Consumer;
 import org.junit.jupiter.api.Test;
 
 import edu.grinnell.csc207.sortslab.Sorts;
+import static edu.grinnell.csc207.sortslab.Sorts.binarySearch;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class SortsTest {
     /**
@@ -31,13 +33,19 @@ public class SortsTest {
             6, 0, 17, 11, 10
         };
     }
-
+    
+    @Test
+    public void testBinarySearch() {
+        int[] arr = {1,2,4,5};
+        assertEquals(2,binarySearch(4,arr,0,4));
+    }
+    
     public void testSort(Consumer<Integer[]> func) {
         Integer[] arr = makeTestArray();
         func.accept(arr);
         assertTrue(sorted(arr));
     }
-
+    
     @Test
     public void testBubbleSort() {
         testSort(Sorts::bubbleSort);

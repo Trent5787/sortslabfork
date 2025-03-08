@@ -1,8 +1,11 @@
 # Sorts Lab
 
-* Authors: _(TODO: list your names here)_
+* Authors: Trenton, Linh, Rex
 
 ## Resources Used
 
-* _(TODO: list your resources here!)_
+* Java 23 coding language
+* Apache Netbeans IDE
+* Course website by prof Osera: https://osera.cs.grinnell.edu/ttap/data-structures/
+* 
 * ...
